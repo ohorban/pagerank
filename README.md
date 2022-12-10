@@ -1,7 +1,24 @@
 # Pagerank Project
 
-In this project, you will create a simple search engine for the website <https://www.lawfareblog.com>.
-This website provides legal analysis on US national security issues.
+## Submission:
+
+```
+python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='weapons'
+```
+
+```
+INFO:gensim.models.keyedvectors:precomputing L2-norms of word weight vectors
+INFO:root:rank=0 pagerank=1.7484119738795902e-08 url=www.lawfareblog.com/donald-trump-and-politically-weaponized-executive-branch
+INFO:root:rank=1 pagerank=9.509989743034628e-09 url=www.lawfareblog.com/dc-district-court-dismisses-journalists-drone-lawsuit
+INFO:root:rank=2 pagerank=8.954780455884856e-09 url=www.lawfareblog.com/update-military-commissions-big-september-911-case
+INFO:root:rank=3 pagerank=8.003395915479723e-09 url=www.lawfareblog.com/update-military-commissions-continued-health-issues-recusal-motion-and-new-cell-al-iraqi
+INFO:root:rank=4 pagerank=6.774819326095649e-09 url=www.lawfareblog.com/why-did-you-wait-moral-emptiness-and-drone-strikes
+INFO:root:rank=5 pagerank=6.662843675122194e-09 url=www.lawfareblog.com/week-military-commissions-98-session-kangaroo-lapel-pin-edition
+INFO:root:rank=6 pagerank=6.6575781735817954e-09 url=www.lawfareblog.com/military-commission-judge-bars-government-using-defendants-statements-fbi-clean-teams-911-case
+INFO:root:rank=7 pagerank=6.642576218540514e-09 url=www.lawfareblog.com/court-military-commissions-review-upholds-life-sentence-al-bahlul
+INFO:root:rank=8 pagerank=4.602836460661971e-09 url=www.lawfareblog.com/georgetown-laws-comprehensive-foreign-intelligence-law-collection
+INFO:root:rank=9 pagerank=3.9653451264324285e-09 url=www.lawfareblog.com/document-judge-allows-kill-list-lawsuit-go-forward
+```
 
 
 ## Background
@@ -1345,29 +1362,3 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
 	INFO:root:rank=9 pagerank=5.1245e-02 url=www.lawfareblog.com/livestream-house-armed-services-holds-hearing-national-security-challenges-north-and-south-america
 
    ```
-
-1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
-
-1. Get at least 5 stars on your repo.
-   (You made trade stars with other students in the class.)
-
-   > **NOTE:**
-   > 
-   > Recruiters use github profiles to determine who to hire,
-   > and pagerank is used to rank user profiles and projects.
-   > Links in this graph correspond to who has starred/followed who's repo.
-   > By getting more stars on your repo, you'll be increasing your github pagerank, which increases the likelihood that recruiters will hire you.
-   > To see an example, [perform a search for `data mining`](https://github.com/search?q=data+mining).
-   > Notice that the results are returned "approximately" ranked by the number of stars,
-   > but because "some stars count more than others" the results are not exactly ranked by the number of stars.
-   > (I asked you not to fork this repo because forks are ranked lower than non-forks.)
-   >
-   > In some sense, we are doing a "dual problem" to data mining by getting these stars.
-   > Recruiters are using data mining to find out who the best people to recruit are,
-   > and we are hacking their data mining algorithms by making those algorithms select you instead of someone else.
-   >
-   > If you're interested in exploring this idea further, here's a python tutorial for extracting GitHub's social graph: <https://www.oreilly.com/library/view/mining-the-social/9781449368180/ch07.html> ; if you're interested in learning more about how recruiters use github profiles, read this Hacker News post: <https://news.ycombinator.com/item?id=19413348>.
-
-1. Submit the url of your repo to sakai.
-
-   Each part is worth 2 points, for 12 points overall.
